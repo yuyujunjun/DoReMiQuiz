@@ -26,7 +26,7 @@ def show_answer(idx):
     print(f"⬅ 左边的音：{letters[left]} / {numbers[left]} / {solfege[left]} （{left_interval}：{letters[left]} → {letters[idx]}）")
     print(f"➡ 右边的音：{letters[right]} / {numbers[right]} / {solfege[right]} （{right_interval}：{letters[idx]} → {letters[right]}）")
 
-def quiz_once():
+def quiz_single():
     mode = random.choice(['letters', 'numbers', 'solfege'])
     idx = random.randrange(7)
     if mode == 'letters':
@@ -38,14 +38,39 @@ def quiz_once():
     print(f"\n🎼 题目（记法：{mode}）： {prompt}")
     input("👉 思考并回答（按回车显示标准答案）...")
     show_answer(idx)
+def quiz_multiple():
+    """多音符练习（仿真谱训练）"""
+    mode = random.choice(['letters', 'numbers', 'solfege'])
+    length = random.randint(3, 7)
+    seq_indices = [random.randint(0, 6) for _ in range(length)]
 
+    if mode == 'letters':
+        seq = [letters[i] for i in seq_indices]
+    elif mode == 'numbers':
+        seq = [numbers[i] for i in seq_indices]
+    else:
+        seq = [solfege[i] for i in seq_indices]
+
+    print("\n🎶 多音符练习（记法：{}）".format(mode))
+    print("谱面： " + " ".join(seq))
+    input("👉 请尝试念出对应的唱名或数字，按回车查看标准答案...")
+
+    print("\n✅ 对照答案：")
+    for i in seq_indices:
+        print(f"{letters[i]:<2}  {numbers[i]:<2}  {solfege[i]}")
+    print("（顺序：字母  数字  唱名）")
 def main():
     print("音名练习（英名 / 数字 / 唱名），显示左右邻音及全/半音关系。输入 q 退出。")
     while True:
-        quiz_once()
-        cont = input("\n是否继续？(回车继续，输入 q 退出)：")
-        if cont.strip().lower() == 'q':
+        mode = input("选择模式：1=单音练习，2=多音谱训练，q=退出：").strip().lower()
+        if mode == '1':
+            quiz_single()
+        elif mode == '2':
+            quiz_multiple()
+        elif mode == 'q':
             break
+        else:
+            print("无效输入，请重新选择。")
 
 if __name__ == '__main__':
     main()
