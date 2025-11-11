@@ -1,4 +1,4 @@
-\# 🎵 NoteIntervalQuiz / 音名音程测验工具
+# 🎵 NoteIntervalQuiz / 音名音程测验工具
 
 
 
@@ -12,11 +12,11 @@ A small Python terminal program to help you memorize music notes, names, and int
 
 
 
-\## ✨ Features / 功能
+## ✨ Features / 功能
 
 
 
-\- Randomly quizzes you using one of three naming systems:  
+- Randomly quizzes you using one of three naming systems:  
 
 &nbsp; 随机出题，使用以下三种记法之一：  
 
@@ -26,7 +26,7 @@ A small Python terminal program to help you memorize music notes, names, and int
 
 &nbsp; - \*\*Solfège（唱名法）\*\*: do re mi fa sol la si  
 
-\- Asks you to recall:  
+- Asks you to recall:  
 
 &nbsp; 提示你记忆：  
 
@@ -34,9 +34,9 @@ A small Python terminal program to help you memorize music notes, names, and int
 
 &nbsp; - Left and right neighboring notes with whole/half step 左右相邻音及全/半音关系  
 
-\- Shows correct answers interactively 交互式显示标准答案  
+- Shows correct answers interactively 交互式显示标准答案  
 
-\- Easy to expand — you can add sharps/flats, minor scales, or GUI 支持后续扩展（升降号、小调、图形界面）
+- Easy to expand — you can add sharps/flats, minor scales, or GUI 支持后续扩展（升降号、小调、图形界面）
 
 
 
@@ -44,11 +44,11 @@ A small Python terminal program to help you memorize music notes, names, and int
 
 
 
-\## 🚀 Usage / 使用方法
+## 🚀 Usage / 使用方法
 
 
 
-1\. \*\*Clone or download this repo\*\*  
+1. **Clone or download this repo**  
 
 &nbsp;  克隆或下载此仓库：
 
