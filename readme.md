@@ -20,11 +20,11 @@ A small Python terminal program to help you memorize music notes, names, and int
 
 &nbsp; 随机出题，使用以下三种记法之一：  
 
-&nbsp; - \*\*Letter notation（英文字母）\*\*: A B C D E F G  
+&nbsp; - **Letter notation（英文字母）**: A B C D E F G  
 
-&nbsp; - \*\*Number notation（数字记法）\*\*: 1 2 3 4 5 6 7  
+&nbsp; - **Number notation（数字记法）**: 1 2 3 4 5 6 7  
 
-&nbsp; - \*\*Solfège（唱名法）\*\*: do re mi fa sol la si  
+&nbsp; - **Solfège（唱名法）**: do re mi fa sol la si  
 
 - Asks you to recall:  
 
