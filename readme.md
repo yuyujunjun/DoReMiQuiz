@@ -1,62 +1,30 @@
 # 🎵 NoteIntervalQuiz / 音名音程测验工具
 
-
-
-A small Python terminal program to help you memorize music notes, names, and intervals (whole/half steps).  
-
 一个帮助你记忆音名、唱名和全音/半音关系的小型 Python 终端练习工具。
 
+---
 
+## 功能
+
+### 单音练习 (Mode 1)
+随机出题，使用三种记法之一：字母(C D E F G A B)、数字(1 2 3 4 5 6 7)、唱名(do re mi fa sol la si)，提示左右相邻音及全/半音关系。
+
+### 多音谱训练 (Mode 2)
+随机生成3-7个音符的序列，练习视奏和唱名对应。
+
+### 吉他指板记忆 (Mode 3)
+包含4个子模式：
+- **1=记音名→找位置**：给一个音，说出它在指板上的所有位置
+- **2=记位置→猜音名**：给几弦几品，说出是什么音
+- **3=混合模式**：随机混合上述两种
+- **4=找最近音位**：实用弹奏练习 - 给定当前按的音和目标音程，找出最近的手指移动路径
+
+使用提示：按 `q` 返回主菜单，按 `b` 从吉他子模式返回。
 
 ---
 
+## 运行
 
-
-## ✨ Features / 功能
-
-
-
-- Randomly quizzes you using one of three naming systems:  
-
-&nbsp; 随机出题，使用以下三种记法之一：  
-
-&nbsp; - **Letter notation（英文字母）**: A B C D E F G  
-
-&nbsp; - **Number notation（数字记法）**: 1 2 3 4 5 6 7  
-
-&nbsp; - **Solfège（唱名法）**: do re mi fa sol la si  
-
-- Asks you to recall:  
-
-&nbsp; 提示你记忆：  
-
-&nbsp; - Other two naming systems 对应的两个名称  
-
-&nbsp; - Left and right neighboring notes with whole/half step 左右相邻音及全/半音关系  
-
-- Shows correct answers interactively 交互式显示标准答案  
-
-- Easy to expand — you can add sharps/flats, minor scales, or GUI 支持后续扩展（升降号、小调、图形界面）
-
-
-
----
-
-
-
-## 🚀 Usage / 使用方法
-
-
-
-1. **Clone or download this repo**  
-
-&nbsp;  克隆或下载此仓库：
-
-&nbsp;  ```bash
-
-&nbsp;  git clone https://github.com/YOUR\_USERNAME/NoteIntervalQuiz.git
-
-&nbsp;  cd NoteIntervalQuiz
-
-
-
+```bash
+python note_quiz.py
+```
